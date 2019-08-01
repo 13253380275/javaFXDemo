@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sqs.controller.RootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="文件">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleNew" text="新建" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="打开" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSave" text="保存">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="UP" meta="UP" shift="UP" shortcut="DOWN" />
+                     </accelerator></MenuItem>
+                        <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="另存为" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="关于" />
+                        <MenuItem mnemonicParsing="false" onAction="#handleExit" text="退出" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="统计图">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#handleShowBirthdayStatistics" text="出生年月统计图" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="帮助">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>

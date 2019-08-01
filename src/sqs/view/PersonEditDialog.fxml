@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="background" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sqs.controller.PersonEditDialogController">
+   <children>
+      <GridPane layoutX="39.0" layoutY="24.0" prefHeight="326.0" prefWidth="542.0" AnchorPane.bottomAnchor="54.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="53.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="307.0" minWidth="10.0" prefWidth="153.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="500.0" minWidth="10.0" prefWidth="437.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" prefHeight="33.0" prefWidth="158.0" text="姓" />
+            <Label alignment="CENTER" prefHeight="25.0" prefWidth="155.0" text="名" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" prefHeight="26.0" prefWidth="155.0" text="住址" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" prefHeight="27.0" prefWidth="155.0" text="籍贯" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="155.0" text="邮编" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" prefHeight="28.0" prefWidth="155.0" text="生日" GridPane.rowIndex="5" />
+            <TextField fx:id="firstNameField" prefHeight="23.0" prefWidth="332.0" GridPane.columnIndex="1" />
+            <TextField fx:id="lastNameField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="streetField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="cityField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="postalCodeField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <DatePicker fx:id="birthdayField" prefHeight="37.0" prefWidth="413.0" styleClass="background-red" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+         </children>
+      </GridPane>
+      <HBox layoutX="240.0" layoutY="359.0" spacing="10.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="334.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="359.0">
+         <children>
+            <Button defaultButton="true" layoutX="240.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleOk" prefHeight="33.0" prefWidth="103.0" text="确定" />
+            <Button layoutX="359.0" layoutY="359.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="33.0" prefWidth="103.0" text="取消" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
