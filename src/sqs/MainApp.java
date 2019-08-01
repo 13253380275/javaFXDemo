@@ -43,6 +43,7 @@ public class MainApp extends Application {
 
         initRootLayout();
         System.out.println();
+        System.out.println(2);
 
         showPersonOverview();
 
