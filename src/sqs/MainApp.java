@@ -42,6 +42,7 @@ public class MainApp extends Application {
         this.primaryStage.getIcons().add(new Image("file:resources/images/address.png"));
 
         initRootLayout();
+        System.out.println();
 
         showPersonOverview();
 
